@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="src/style/main.css">
+</head>
+<body onload="isDrawArena()">
+    <div id="modal">
+        <h1>Game Over!</h1>
+        <p>⟳ The page will refresh in 4 seconds or refresh yourself</p>
+    </div>
+    <div id="wrapper">
+        <canvas id="draw" class="draw" width="300" height="600"></canvas>
+        <div id="blockScore">
+            <label for="score">Score</label>
+            <div class="text" id="score">0</div>
+            <label for="line">Line</label>
+            <div class="text" id="line">0</div>
+            <input type="button" value="Play" id="play"/>
+            <div id="timer">00:00:00</div>
+        </div>
+    </div>
+    <script type="text/javascript"  src="src/js/main.js"></script>
+</body>
+</html>
